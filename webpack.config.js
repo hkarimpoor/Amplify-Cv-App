@@ -1,7 +1,6 @@
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 
 module.exports = {
@@ -39,9 +38,6 @@ module.exports = {
     watchFiles: ['src/*']
   },
   plugins: [
-    new CopyWebpackPlugin({
-      patterns: ['template.html']
-    }),
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
         title: 'webpack Boilerplate',
