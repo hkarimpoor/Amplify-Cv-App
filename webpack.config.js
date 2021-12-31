@@ -38,7 +38,10 @@ module.exports = {
     hot: true,
     watchFiles: ['src/*']
   },
-  plugins: [ 
+  plugins: [
+    new CopyWebpackPlugin({
+      patterns: ['template.html']
+    }),
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
         title: 'webpack Boilerplate',
