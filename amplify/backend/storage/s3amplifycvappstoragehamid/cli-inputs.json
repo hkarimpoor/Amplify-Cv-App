@@ -1,0 +1,14 @@
+{
+  "resourceName": "s3amplifycvappstoragehamid",
+  "bucketName": "amplify-cv-app-storage-hamid",
+  "policyUUID": "7c5e34c3",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ]
+}
